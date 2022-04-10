@@ -1,0 +1,78 @@
+<div class="container">
+  <div class="mt-5">
+
+    <p ngNonBindable> {{myString | uppercase}}</p>
+    <h2>{{myString1 | uppercase}}</h2>
+    <br>
+    <p ngNonBindable> {{myString | lowercase}}</p>
+    <h2>{{myString2 | lowercase}}</h2>
+    <br>
+
+    <p ngNonBindable> {{amount | currency}}Default</p>
+    <h2>{{amount | currency}}</h2>
+
+    <p ngNonBindable> {{amount | currency}}Update Currency Symbol</p>
+    <h2>{{amount | currency: 'EUR'}}</h2>
+
+    <p ngNonBindable> {{amount | currency}}Display Currency Code</p>
+    <h2>{{amount | currency: 'EUR': 'code'}}</h2>
+
+    <!-- Date -->
+    <p ngNonBindable> {{currentDate | date}}Default</p>
+    <h2>{{currentDate | date}}</h2>
+
+    <p ngNonBindable> {{currentDate | date: 'shortDate'}}shortDate</p>
+    <h2>{{currentDate | date: 'shortDate'}}</h2>
+
+    <p ngNonBindable> {{currentDate | date: 'fullDate'}}fullDate</p>
+    <h2>{{currentDate | date: 'fullDate'}}</h2>
+
+    <p ngNonBindable> {{currentDate | date: 'shortTime'}}shortTime</p>
+    <h2>{{currentDate | date: 'shortTime'}}</h2>
+
+    <p ngNonBindable> {{currentDate | date: 'fullTime'}}fullTime</p>
+    <h2>{{currentDate | date: 'fullTime'}}</h2>
+
+    <p ngNonBindable> {{currentDate | date: 'dd/MM/yyyy'}}Formated date</p>
+    <h2>{{currentDate | date: 'dd/mm/yyyyy'}}</h2>
+
+    <p ngNonBindable> {{currentDate | date: 'HH/mm/ss'}}Formated Time</p>
+    <h2>{{currentDate | date: 'hh/mm/ss'}}</h2>
+
+
+    <!-- Number -->
+    <p ngNonBindable> {{total | dec}}Formated Time</p>
+    <h2>{{total | number}}</h2>
+
+    <p ngNonBindable> {{total | '1.2'}}Formated Time</p>
+    <h2>{{total | number: '1.2'}}</h2>
+
+    <p ngNonBindable> {{total | '5.2-3'}}Formated Time</p>
+    <h2>{{total | number: '5.2-3'}}</h2>
+
+    <!-- Percentage -->
+    <p ngNonBindable> {{percentageVal | precent}}Formated Time</p>
+    <h2>{{percentageVal | percent}}</h2>
+
+    <p ngNonBindable> {{percentageVal | precent: '5.1-2'}}Formated Time</p>
+    <h2>{{percentageVal | percent: '5.1-2'}}</h2>
+
+    <!-- JSON -->
+    <p ngNonBindable> {{ myObject | json }} JSON</p>
+    <h2> {{ myObject | json }}</h2>
+    <br>
+    <!-- Reverse String -->
+    <h2>{{ myString1 | reverse }}</h2>
+
+    <!-- Using multiple pieps -->
+    <h2>{{ myString2|reverse | uppercase }}</h2>
+    <br>
+    <!-- SQ Root -->
+    <h2>SQ Root of 80 : {{ 80 | sqroot: 'inch' }}</h2>
+
+  </div>
+</div>
+
+
+
+
